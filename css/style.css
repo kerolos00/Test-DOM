@@ -1,0 +1,46 @@
+.item {
+	position: relative;
+	overflow: hidden;
+}
+
+.item:hover .layer {
+	bottom: 15px;
+}
+
+.item img {
+	width : 100%;
+	cursor: pointer;
+}
+
+.layer {
+	position        : absolute;
+	background-color: white;
+	left            : 15px;
+	right           : 15px;
+	bottom          : -25%;
+	text-align      : center;
+	transition      : bottom 0.8s;
+}
+
+#boxContainer {
+	position       : fixed;
+	top            : 0;
+	left           : 0;
+	right          : 0;
+	bottom         : 0;
+	background     : rgba(0, 0, 0, 0.300);
+	display        : none;
+	justify-content: center;
+	align-items    : center;
+}
+
+.innerBox {
+	width              : 60%;
+	height             : 800px;
+	background-size    : cover;
+	background-position: center;
+}
+
+.innerBox i {
+	cursor: pointer;
+}
